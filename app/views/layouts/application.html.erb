@@ -5,7 +5,9 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 </head>
+<body>
 <header>
   <div class="container">
     <div class="blog"><h2>Surf and Paddle Co. Blog</h2></div>
@@ -20,10 +22,7 @@
     <p>An IronYard Academy Project Est. Spring 2014</p>
 </div>
 </header>
-<body>
-
 <%= yield %>
-
 <footer>
   <div class="container">
   <h4 class="copyright">The Ironyard Copyright 2013. All Rights Reserved</h4>
@@ -36,7 +35,5 @@
   </nav>
 </div>
 </footer>
-
-
 </body>
 </html>
